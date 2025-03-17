@@ -75,7 +75,7 @@ const PortfolioCard: React.FC = () => {
     },
     "PORTFOLIO": {
       description: "A comprehensive portfolio showcasing my skills and projects as a Front end Developer. This project highlights my expertise in React and TypeScript, featuring a responsive design and interactive elements to provide a seamless user experience.",
-      githubLink: "https://github.com/ryanlightfoot/Portfolio"
+      githubLink: "https://github.com/ryanlightfoot/new_portfolio"
     },
     "BABELAS": {
       description: "A Kings Cup inspired drinking game developed for Android devices. This interactive party game features custom rules, dynamic card animations, and a modern user interface, making it the perfect companion for social gatherings.",
