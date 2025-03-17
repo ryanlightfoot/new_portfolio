@@ -1,0 +1,7 @@
+.hobby-image {
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
