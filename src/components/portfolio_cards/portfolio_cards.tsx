@@ -67,23 +67,32 @@ const PortfolioCard: React.FC = () => {
     };
   }, []);
 
-  const projectNames = ["CAMPWEST", "PORTFOLIO", "BABELAS", "SWELLSEEKERS"];
-  const projectDescriptions: { [key: string]: { description: string, githubLink: string | null } } = {
+  const projectNames = ["CAMPWEST", "PORTFOLIO", "BABELAS", "SWELLSEEKERS", "SHAYES PORTFOLIO"];
+  const projectDescriptions: { [key: string]: { description: string, githubLink: string | null, websiteLink: string | null } } = {
     "CAMPWEST": {
       description: "Completed private projects involving Python, PostgreSQL, Solana, and TypeScript. These projects demonstrate my ability to work with a variety of technologies and deliver robust solutions in different domains. (Current employment)",
-      githubLink: null // No GitHub link provided
+      githubLink: null, // No GitHub link provided
+      websiteLink: null // No Website link provided
     },
     "PORTFOLIO": {
       description: "A comprehensive portfolio showcasing my skills and projects as a Front end Developer. This project highlights my expertise in React and TypeScript, featuring a responsive design and interactive elements to provide a seamless user experience.",
-      githubLink: "https://github.com/ryanlightfoot/new_portfolio"
+      githubLink: "https://github.com/ryanlightfoot/new_portfolio",
+      websiteLink: null // No Website link provided
     },
     "BABELAS": {
       description: "A Kings Cup inspired drinking game developed for Android devices. This interactive party game features custom rules, dynamic card animations, and a modern user interface, making it the perfect companion for social gatherings.",
-      githubLink: "https://github.com/ryanlightfoot/Babelas"
+      githubLink: "https://github.com/ryanlightfoot/Babelas", // No GitHub link provided
+      websiteLink: null // No Website link provided
     },
     "SWELLSEEKERS": {
       description: "A React-based web application designed for surf enthusiasts to check wave forecasts, weather conditions, and equipment recommendations. Features include 5-day forecasts with hourly data for popular surf spots, user accounts to save favorite locations, and equipment tracking for wetsuits and surfboards. Created for my final project at Nelson Mandela University.",
-      githubLink: "https://github.com/ryanlightfoot/SwellSeekersFrontEnd"
+      githubLink: "https://github.com/ryanlightfoot/SwellSeekersFrontEnd", // No GitHub link provided
+      websiteLink: null // No Website link provided
+    },
+    "SHAYES PORTFOLIO": {
+      description: "A photography portfolio made with React, showcasing a collection of photographs with a sleek and modern design.",
+      githubLink: "https://github.com/ryanlightfoot/shaye_photography_port",
+      websiteLink: "https://shaye-photography-port.vercel.app"
     }
   };
 
@@ -107,6 +116,11 @@ const PortfolioCard: React.FC = () => {
             {projectDescriptions[selectedProject].githubLink && (
               <a href={projectDescriptions[selectedProject].githubLink} target="_blank" rel="noopener noreferrer">
                 View on GitHub
+              </a>
+            )}
+            {projectDescriptions[selectedProject].websiteLink && (
+              <a href={projectDescriptions[selectedProject].websiteLink} target="_blank" rel="noopener noreferrer">
+                Visit Website
               </a>
             )}
           </div>
